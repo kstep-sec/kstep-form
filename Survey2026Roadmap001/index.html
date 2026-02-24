@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 표준화 로드맵 수요조사</title>
+    <meta name="description" content="KSTEP 2026 표준화 로드맵 수요조사 양식">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+
+    <link rel="stylesheet" href="./style.css?v=2">
+</head>
+
+<body>
+    <div class="background-effect">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <!-- Hidden iframe to bypass CORS and prevent redirect on form submit -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+        onload="if(window.submitted) { window.showSuccessMessage(); }"></iframe>
+
+    <div class="app-container">
+        <header class="form-header">
+            <h1 class="gradient-text">"표준화 로드맵" 수요조사</h1>
+            <p class="subtitle">국내 표준 기술 확산 및 국제 표준화 선도를 위한 전문가 수요조사</p>
+
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div class="progress-steps">
+                    <div class="step active" data-step="1">안내</div>
+                    <div class="step" data-step="2">1. 인적사항</div>
+                    <div class="step" data-step="3">2. 상세내용</div>
+                    <div class="step" data-step="4">3. 기술분류</div>
+                    <div class="step" data-step="5">4. 개인정보</div>
+                </div>
+            </div>
+        </header>
+
+        <main class="form-main">
+            <form
+                action="https://docs.google.com/forms/d/e/1FAIpQLSdkos2CPXY71VgVi54Gw45qmeneXGv46URgMGb2riWBFKvb-w/formResponse"
+                method="POST" target="hidden_iframe" id="custom-form">
+
+                <input type="hidden" name="fvv" value="1">
+                <input type="hidden" name="partialResponse" value='[null,null,"1772425975303595355"]'>
+                <input type="hidden" name="pageHistory" value="0,1,2,3,4,5">
+                <input type="hidden" name="fbzx" value="1772425975303595355">
+                <input type="hidden" name="submissionTimestamp" value="-1">
+
+                <!-- STEP 1: 안내 -->
+                <section class="wizard-step active" id="step-1">
+                    <h2 class="step-title"><i class="ri-information-line"></i> "표준화 로드맵" 수요조사 안내</h2>
+
+                    <div class="info-content mb-6" style="line-height: 1.6;">
+                        <h4 class="gradient-text mb-4" style="font-size: 1.1rem;">■ 추진 목적</h4>
+                        <p class="mb-4">본 수요조사는 국내 표준 기술을 확산하고 ISO 표준화 활동에 반영하여 한국의 국제 표준화 선도를 목적으로 하고 있으며 여러 방면에서 수요조사
+                            결과를 활용합니다.</p>
+                        <ul class="custom-list mb-6" style="list-style-type: disc; margin-left: 1.5rem;">
+                            <li><strong>COSD사업, 표기력사업 연계</strong> (선정 과정에 로드맵을 참고)</li>
+                            <li><strong>스마트제조 표준화 로드맵</strong>의 일부로 반영</li>
+                            <li>기술표준원이나 다른 부처에서 수시로 급하게 과제화 요청이 발생하는 경우, 본 로드맵의 내용을 전달 및 반영</li>
+                        </ul>
+
+                        <h4 class="gradient-text mb-4" style="font-size: 1.1rem;">▼ 수요조사 설문 정보</h4>
+                        <ul class="custom-list mb-6" style="list-style-type: disc; margin-left: 1.5rem;">
+                            <li><strong>총 4개 섹션으로 구성</strong> (평균 5-10분 가량 소요)</li>
+                            <li><strong>섹션 안내:</strong> 1. 인적사항(5문항) → 2. 표준 아이디어 / 상세내용 작성(1~5문항) → 3. 기술 분류
+                                매트릭스(4~5문항) → 4. 개인정보 보호 동의(2문항)</li>
+                            <li><strong>소정의 원고료 지급:</strong> 참여 전문가 대상 원고료 지급 및 2026 로드맵 발간본 열람 혜택 제공</li>
+                        </ul>
+                        <p class="field-hint mb-6" style="color: #ffb86c;">* 빨간색 별표(<span class="required"></span>) 표시는
+                            필수 항목을 나타냅니다.</p>
+
+                        <hr style="border-color: rgba(255, 255, 255, 0.1); margin: 2rem 0;">
+
+                        <div class="glass-panel p-4" style="border-left: 4px solid var(--primary-color);">
+                            <h4 class="mb-3" style="color: white;"><i class="ri-error-warning-line"
+                                    style="color: #ffb86c;"></i> ※ 주의사항</h4>
+                            <ol class="custom-list mb-4" style="list-style-type: decimal; margin-left: 1.5rem;">
+                                <li><strong>내용 자동저장:</strong> 입력된 내용은 브라우저에 실시간 저장되며, 제출 완료 시에만 초기화됩니다.</li>
+                                <li><strong>설문 수정:</strong> 제출 직후 완료 화면에서 <b>[작성 내용 수정하기]</b>를 눌러 즉시 수정할 수 있습니다.</li>
+                                <li><strong>신규 추가 제출:</strong> 완료 화면에서 <b>[새로 작성하기]</b>를 눌러 새로운 기술/표준 수요를 무제한 제안할 수
+                                    있습니다.</li>
+                            </ol>
+
+                            <hr style="border-color: rgba(255, 255, 255, 0.1); margin: 1.5rem 0;">
+
+                            <h4 class="mb-3" style="color: white;"><i class="ri-contacts-book-2-line"
+                                    style="color: var(--primary-main);"></i> ※ 수신 및 문의처</h4>
+                            <ul class="custom-list" style="margin-left: 1.5rem;">
+                                <li><strong>담당자:</strong> 노치호 팀장 (chnoh@kstep.or.kr / 010-2522-4680)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- STEP 2: 인적사항 -->
+                <section class="wizard-step" id="step-2">
+                    <h2 class="step-title"><i class="ri-user-settings-line"></i> 기본 인적사항</h2>
+                    <p class="step-desc">응답자 분의 기본적인 정보를 입력해 주세요.</p>
+
+                    <div class="form-group">
+                        <label class="required">소속/직책</label>
+                        <input type="text" name="entry.1710385081" required placeholder="예: 한국산업데이터표준협회 / 팀장"
+                            class="input-field">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="required">성명</label>
+                        <input type="text" name="entry.1781201824" required placeholder="예: 홍길동" class="input-field">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="required">연락처(이메일)</label>
+                        <input type="email" name="entry.2017114296" required placeholder="example@kstep.or.kr"
+                            class="input-field">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="required">설문 유형 (전문가 여부)</label>
+                        <div class="radio-group">
+                            <label class="radio-card">
+                                <input type="radio" name="entry.1341068020" value="표준 전문가 설문" required>
+                                <span class="card-content">
+                                    <i class="ri-graduation-cap-line"></i>
+                                    <span class="title">표준 전문가</span>
+                                    <span class="desc">상세한 기술 내용 작성이 가능하신 분</span>
+                                </span>
+                            </label>
+                            <label class="radio-card">
+                                <input type="radio" name="entry.1341068020" value="비 전문가 설문 (간략화 버전)">
+                                <span class="card-content">
+                                    <i class="ri-lightbulb-line"></i>
+                                    <span class="title">비 전문가 (일반산업)</span>
+                                    <span class="desc">아이디어 위주의 간략한 제안</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- STEP 3: 상세내용 -->
+                <section class="wizard-step" id="step-3">
+                    <h2 class="step-title"><i class="ri-edit-box-line"></i> 표준 아이디어 및 상세 내용</h2>
+                    <p class="step-desc">제안하시는 표준 기술에 대해 작성해 주세요.</p>
+
+                    <div class="form-group expert-only">
+                        <label class="required">표준 명 (기술 명)
+                            <button type="button" class="btn-example" onclick="toggleExample('ex-title')">
+                                <i class="ri-lightbulb-flash-line"></i> 작성 예시
+                            </button>
+                        </label>
+                        <div id="ex-title" class="example-box" style="display: none;">
+                            <b>예시 :</b> 제품 데이터 소유권 갈등 해결을 위한 데이터 핸드오버 가이드라인
+                        </div>
+                        <input type="text" name="entry.361180820" required placeholder="제안할 표준/기술의 명칭을 적어주세요"
+                            class="input-field">
+                    </div>
+
+                    <div class="form-group non-expert-only">
+                        <label class="required">해당 표준이 필요하다고 생각하는 이유는 무엇인가요? (자유 서술)</label>
+                        <span class="field-hint" style="margin-bottom: 1rem; display: block; line-height: 1.6;">
+                            표준이 필요하다고 생각하는 분야·기술·문제 상황을 자유롭게 작성해주세요.<br>
+                            <b>반드시 구체적 표준 용어나 기술 용어를 몰라도 됩니다.</b><br><br>
+                            우리 산업/현장에서 필요한 표준 아이디어를 자유롭게 3~5줄로 작성해주세요.<br>
+                            (예: "AI 기반 공정제어 데이터 포맷이 업체마다 달라 교차 적용이 어려움", "협동 로봇 안전인증 절차가 중소기업에 과도한 부담" 등)
+                        </span>
+                        <textarea name="entry.85574161" required rows="4"
+                            placeholder="우리 현장에 이런 표준/가이드라인이 있었으면 좋겠다 생각했던 점을 편하게 적어주세요."
+                            class="input-field"></textarea>
+                    </div>
+
+                    <div class="form-group expert-only">
+                        <label class="required">표준화 내용/설명 (1~5줄 내외)
+                            <button type="button" class="btn-example" onclick="toggleExample('ex-desc')">
+                                <i class="ri-lightbulb-flash-line"></i> 작성 예시
+                            </button>
+                        </label>
+                        <div id="ex-desc" class="example-box" style="display: none;">
+                            <b>예시 :</b>
+                            <ul style="list-style-type: '- '; padding-left: 1rem; margin-top: 0.25rem;">
+                                <li>제품 핸드오버에 포함되는 데이터의 종류와 범위에 대한 표준화</li>
+                                <li>업종별, 제품 생애주기 단계별 세분화</li>
+                                <li>최종 조립사와 기자재 공급사 사이에도 데이터 핸드오버 표준 필요</li>
+                            </ul>
+                        </div>
+                        <textarea name="entry.1175071977" required rows="4"
+                            placeholder="어떤 부분을 표준화해야 하는지 구체적으로 서술해 주세요." class="input-field"></textarea>
+                    </div>
+
+                    <div class="form-group expert-only">
+                        <label class="required">표준화 필요성 (1~5줄 내외)
+                            <button type="button" class="btn-example" onclick="toggleExample('ex-need')">
+                                <i class="ri-lightbulb-flash-line"></i> 작성 예시
+                            </button>
+                        </label>
+                        <div id="ex-need" class="example-box" style="display: none;">
+                            <b>예시 :</b>
+                            <ul style="list-style-type: '- '; padding-left: 1rem; margin-top: 0.25rem;">
+                                <li>산업의 스마트화가 진행될수록 각 관계 기업(stake holder) 간의 디지털 데이터 핸드오버 수요는 증가하고 있음</li>
+                                <li>노하우 및 기술 유출에 대한 위험성 및 관련 표준의 부재로, 데이터 발주사와 공급사 사이에 데이터 핸드오버 갈등이 증가</li>
+                                <li>부품 공급망이 길고 복잡한 대형 조립 구조물 산업(플랜트, 자동차, 항공기)에서 갈등 해소와 생산성 향상</li>
+                                <li>스마트 공장 플랜트의 디지털 트윈을 구축하는 과정에서, 데이터의 소유권 문제로 거래 당사자 (갑과 을) 사이에 갈등이 발생</li>
+                            </ul>
+                        </div>
+                        <textarea name="entry.1725683864" required rows="4"
+                            placeholder="산업에 미치는 영향 및 정책적 시급성 등을 서술해 주세요." class="input-field"></textarea>
+                    </div>
+
+                    <div class="form-group expert-only">
+                        <label class="required">표준 구분</label>
+                        <div class="select-wrapper">
+                            <select name="entry.1624520949" required class="input-field">
+                                <option value="" disabled selected>선택해 주세요</option>
+                                <option value="KS 부합화(IDT)">KS 부합화(IDT)</option>
+                                <option value="KS 부합화(MOD)">KS 부합화(MOD)</option>
+                                <option value="KS 고유표준">KS 고유표준</option>
+                                <option value="IS 고유표준(IS, TS, TR ...)">IS 고유표준(IS, TS, TR ...)</option>
+                            </select>
+                            <i class="ri-arrow-down-s-line select-icon"></i>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- STEP 4: 기술분류 -->
+                <section class="wizard-step" id="step-4">
+                    <div
+                        style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.5rem;">
+                        <h2 class="step-title" style="margin-bottom: 0;"><i class="ri-mind-map"></i> 기술 분류 매트릭스</h2>
+                        <button type="button" class="btn btn-secondary btn-sm" onclick="openMatrixModal()"
+                            style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                            <i class="ri-grid-fill"></i> 매트릭스 표 보기 (자동 선택)
+                        </button>
+                    </div>
+                    <p class="step-desc">제안 기술이 해당하는 산업/분야를 선택해 주세요.</p>
+
+                    <div class="form-group">
+                        <label class="required">산업 분야 선택</label>
+                        <div class="select-wrapper">
+                            <select name="entry.1386415443" required class="input-field dropdown-with-other"
+                                data-other-id="industry-other">
+                                <option value="" disabled selected>예시: 제조업/플랜트/물류/섬유/항공·국방/기타</option>
+                                <option value="1. 제조업 전반">1. 제조업 전반</option>
+                                <option value="2. 플랜트·원자력">2. 플랜트·원자력</option>
+                                <option value="3. 물류·공급망">3. 물류·공급망</option>
+                                <option value="4. 섬유·원자재">4. 섬유·원자재</option>
+                                <option value="5. 항공·드론·국방">5. 항공·드론·국방</option>
+                                <option value="6. 산업공통">6. 산업공통</option>
+                                <option value="__other_option__">기타</option>
+                            </select>
+                            <i class="ri-arrow-down-s-line select-icon"></i>
+                        </div>
+                        <input type="text" name="entry.1386415443.other_option_response" id="industry-other"
+                            class="input-field mt-4" placeholder="기타 산업 분야 입력" style="display: none;" disabled>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="required">기술 분야 선택</label>
+                        <div class="select-wrapper">
+                            <select name="entry.1381958828" required class="input-field dropdown-with-other"
+                                data-other-id="tech-other">
+                                <option value="" disabled selected>예시: 디지털트윈/DPP/데이터교환/자율제조/통신/AI/플랫폼/기타</option>
+                                <option value="A. Digital Twin">A. Digital Twin</option>
+                                <option value="B. DPP (Digital Product Passport)">B. DPP (Digital Product Passport)
+                                </option>
+                                <option value="C. 제조 데이터 표현·교환·3D 시각화">C. 제조 데이터 표현·교환·3D 시각화</option>
+                                <option value="D. 자율제조·스마트 제조 시스템">D. 자율제조·스마트 제조 시스템</option>
+                                <option value="E. 통신·인터페이스·상호운용성">E. 통신·인터페이스·상호운용성</option>
+                                <option value="F. 데이터 품질·AI·이상탐지">F. 데이터 품질·AI·이상탐지</option>
+                                <option value="G. 데이터 거래·자산관리·플랫폼">G. 데이터 거래·자산관리·플랫폼</option>
+                                <option value="__other_option__">기타</option>
+                            </select>
+                            <i class="ri-arrow-down-s-line select-icon"></i>
+                        </div>
+                        <input type="text" name="entry.1381958828.other_option_response" id="tech-other"
+                            class="input-field mt-4" placeholder="기타 기술 분야 입력" style="display: none;" disabled>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="required">AI 관련 여부</label>
+                        <div class="select-wrapper">
+                            <select name="entry.1761286863" required class="input-field">
+                                <option value="" disabled selected>선택해 주세요</option>
+                                <option value="예 (AI 알고리즘, 학습 데이터, AI 신뢰성 등과 직접 관련)">예 (직접 관련)</option>
+                                <option value="부분적 관련 (기존 기술에 AI 기술을 융합/적용)">부분적 관련 (융합/적용)</option>
+                                <option value="아니요">아니요</option>
+                                <option value="미정">미정</option>
+                            </select>
+                            <i class="ri-arrow-down-s-line select-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="required">표준 구분</label>
+                        <div class="select-wrapper">
+                            <select name="entry.681997926" required class="input-field" id="standard-type-select">
+                                <option value="" disabled selected>선택해 주세요</option>
+                                <option value="1. 국제표준(ISO, IEC, ...)">국제표준 (ISO, IEC 등)</option>
+                                <option value="2. 사실상표준(IEEE, W3C, SEMI, OCF 등)">사실상표준 (IEEE, W3C 등)</option>
+                                <option value="3. 국가표준(KS)">국가표준 (KS)</option>
+                                <option value="4. 기타 및 미정">기타 및 미정</option>
+                            </select>
+                            <i class="ri-arrow-down-s-line select-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="international-org-group" style="display: none;">
+                        <label>관련 국제 표준화 기구 정보 (선택)</label>
+                        <input type="hidden" name="entry.983265279" value="__other_option__"
+                            id="international-org-hidden" disabled>
+                        <input type="text" name="entry.983265279.other_option_response"
+                            placeholder="예: ISO TC184 SC4 JWG16" class="input-field" id="international-org-input"
+                            disabled>
+                        <small class="field-hint">국제/사실상표준 관련 시 작성 (모를 경우 비워두셔도 됩니다)</small>
+                    </div>
+                </section>
+
+                <!-- STEP 5: 개인정보 보호 -->
+                <section class="wizard-step" id="step-5">
+                    <h2 class="step-title"><i class="ri-shield-check-line"></i> 개인정보 수집 및 활용 동의서</h2>
+
+                    <div class="privacy-box">
+                        <div class="privacy-content">
+                            <h4>■ 관리부서</h4>
+                            <p>사단법인 한국산업데이터표준협회(KSTEP)</p>
+
+                            <h4>■ 관련법규</h4>
+                            <p>개인정보 보호법 제15조, 제22조, 제24조 / 국세기본법 제85조의 3</p>
+
+                            <h4>■ 기본 개인정보 수집·활용 [필수]</h4>
+                            <ul>
+                                <li><strong>수집·이용 항목:</strong> 이름, 연락처</li>
+                                <li><strong>수집·이용 목적:</strong> 본인 식별 절차에 이용, 원고료 지급을 위한 연락</li>
+                                <li><strong>이용·보유 기간:</strong> 세무 신고 및 과세에 활용 5년간 보관 (국세기본법 제85조의 3에 근거)</li>
+                            </ul>
+                        </div>
+
+                        <div class="consent-action mt-4">
+                            <label class="checkbox-custom required">
+                                <input type="radio" name="entry.1333260810" value="동의" required>
+                                <span>위 개인정보 수집 및 활용에 동의합니다.</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-6">
+                        <label>기타 문의사항 (선택)</label>
+                        <textarea name="entry.542030999" rows="3" placeholder="수요조사와 관련된 코멘트나 문의사항이 있다면 남겨주세요."
+                            class="input-field"></textarea>
+                    </div>
+
+                    <div class="submission-notice">
+                        <i class="ri-information-line"></i>
+                        <span>제출 버튼을 누르시면 성공적으로 구글 폼으로 접수됩니다.</span>
+                    </div>
+                </section>
+
+                <!-- Navigation Controls -->
+                <div class="form-navigation">
+                    <button type="button" class="btn btn-secondary" id="btn-prev" style="display: none;">
+                        <i class="ri-arrow-left-line"></i> 이전
+                    </button>
+                    <button type="button" class="btn btn-primary" id="btn-next">
+                        다음 <i class="ri-arrow-right-line"></i>
+                    </button>
+                    <button type="submit" class="btn btn-primary btn-submit" id="btn-submit" style="display: none;">
+                        제출하기 <i class="ri-check-line"></i>
+                    </button>
+                </div>
+            </form>
+        </main>
+
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+            onload="if(window.submitted) { window.showSuccessMessage(); }"></iframe>
+
+        <div class="success-screen" id="success-screen" style="display: none;">
+            <div class="success-icon">
+                <i class="ri-checkbox-circle-fill"></i>
+            </div>
+            <h2 class="gradient-text">제출이 완료되었습니다!</h2>
+            <p>2026 표준화 로드맵 수요조사에 참여해 주셔서 감사합니다.</p>
+            <p class="sub-message">제출하신 내용은 성공적으로 기록되었습니다.</p>
+
+            <div class="submission-notice" style="margin-top: 1.5rem; justify-content: center; text-align: left;">
+                <i class="ri-information-line"></i>
+                <span><b>수정이 필요하신가요?</b><br>아래 [작성 내용 수정하기] 버튼을 눌러 기존 내용을 빠르고 간편하게 수정하세요.</span>
+            </div>
+
+            <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem;">
+                <button type="button" class="btn btn-secondary" onclick="hardResetForm()">
+                    <i class="ri-file-add-line"></i> 새로 작성하기
+                </button>
+                <button type="button" class="btn btn-primary" onclick="returnToForm()">
+                    <i class="ri-edit-2-line"></i> 작성 내용 수정하기
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Matrix Modal -->
+    <div class="matrix-modal" id="matrix-modal" style="display: none;">
+        <div class="matrix-content">
+            <div class="matrix-header">
+                <h3><i class="ri-mind-map"></i> 기술 분류 매트릭스</h3>
+                <button type="button" class="btn-close" onclick="closeMatrixModal()">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="matrix-body">
+                <p style="margin-bottom: 1rem; color: var(--text-secondary); font-size: 0.95rem;">
+                    <i class="ri-information-line" style="color: var(--primary-main);"></i>
+                    해당하는 항목의 표 영역을 <b>클릭</b>하시면 산업 분야와 기술 분야가 <b>자동으로 입력</b>됩니다.
+                </p>
+                <div style="overflow-x: auto;">
+                    <table class="matrix-table">
+                        <thead>
+                            <tr>
+                                <th>기술축 / 산업군</th>
+                                <th class="col-header">1. 제조업 전반</th>
+                                <th class="col-header">2. 플랜트·원자력</th>
+                                <th class="col-header">3. 물류·공급망</th>
+                                <th class="col-header">4. 섬유·원자재</th>
+                                <th class="col-header">5. 항공·드론·국방</th>
+                                <th class="col-header">6. 산업공통</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- ROW A -->
+                            <tr>
+                                <th>A. Digital Twin</th>
+                                <td class="clickable-cell" onclick="selectMatrix('1. 제조업 전반', 'A. Digital Twin')">
+                                    <b>A1</b> (DT 프레임워크, 충실도, 시뮬레이션, 모듈 표준 등)
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('2. 플랜트·원자력', 'A. Digital Twin')">
+                                    <b>A2</b> (방사선 DT, 원자력 기자재, 플랜트 설계 DT 등)
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('3. 물류·공급망', 'A. Digital Twin')">
+                                    <b>A3</b> (라인 시뮬레이션, AGV, PLC-DT 통신)
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('4. 섬유·원자재', 'A. Digital Twin')">
+                                    <b>A4</b> (재료·제품 DT 일부)
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('5. 항공·드론·국방', 'A. Digital Twin')">
+                                    <b>A5</b> (드론 기반 모델링)
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('6. 산업공통', 'A. Digital Twin')">
+                                    <b>A6</b> (DT 품질보증, 성능일치도)
+                                </td>
+                            </tr>
+
+                            <!-- ROW B -->
+                            <tr>
+                                <th>B. DPP (Digital Product Passport)</th>
+                                <td class="clickable-cell"
+                                    onclick="selectMatrix('1. 제조업 전반', 'B. DPP (Digital Product Passport)')">
+                                    <b>B1</b> (일부 제조 생태계 적용)
+                                </td>
+                                <td class="clickable-cell"
+                                    onclick="selectMatrix('2. 플랜트·원자력', 'B. DPP (Digital Product Passport)')">
+                                    <b>B2</b> (원자력 기자재 추적관리)
+                                </td>
+                                <td class="clickable-cell"
+                                    onclick="selectMatrix('3. 물류·공급망', 'B. DPP (Digital Product Passport)')">
+                                    <b>B3</b> (공급망·재활용·블록체인)
+                                </td>
+                                <td class="clickable-cell"
+                                    onclick="selectMatrix('4. 섬유·원자재', 'B. DPP (Digital Product Passport)')">
+                                    <b>B4</b> (섬유 산업 전용 DPP)
+                                </td>
+                                <td class="clickable-cell"
+                                    onclick="selectMatrix('5. 항공·드론·국방', 'B. DPP (Digital Product Passport)')">
+                                    <b>B5</b>
+                                </td>
+                                <td class="clickable-cell"
+                                    onclick="selectMatrix('6. 산업공통', 'B. DPP (Digital Product Passport)')">
+                                    <b>B6</b> (DPP 기본 시리즈)
+                                </td>
+                            </tr>
+
+                            <!-- ROW C -->
+                            <tr>
+                                <th>C. 제조 데이터 표현·교환·3D 시각화</th>
+                                <td class="clickable-cell"
+                                    onclick="selectMatrix('1. 제조업 전반', 'C. 제조 데이터 표현·교환·3D 시각화')">
+                                    <b>C1</b> (STEP, JT, COLLADA, AP 시리즈, 제품 데이터 동등성)
+                                </td>
+                                <td class="clickable-cell"
+                                    onclick="selectMatrix('2. 플랜트·원자력', 'C. 제조 데이터 표현·교환·3D 시각화')">
+                                    <b>C2</b> (플랜트 수명주기 데이터, 형상관리)
+                                </td>
+                                <td class="clickable-cell"
+                                    onclick="selectMatrix('3. 물류·공급망', 'C. 제조 데이터 표현·교환·3D 시각화')">
+                                    <b>C3</b> (일부 데이터 연계)
+                                </td>
+                                <td class="clickable-cell"
+                                    onclick="selectMatrix('4. 섬유·원자재', 'C. 제조 데이터 표현·교환·3D 시각화')">
+                                    <b>C4</b> (엔지니어링 속성·재료 정보)
+                                </td>
+                                <td class="clickable-cell"
+                                    onclick="selectMatrix('5. 항공·드론·국방', 'C. 제조 데이터 표현·교환·3D 시각화')">
+                                    <b>C5</b>
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('6. 산업공통', 'C. 제조 데이터 표현·교환·3D 시각화')">
+                                    <b>C6</b> (CDD, SysML-XMI 변환 등)
+                                </td>
+                            </tr>
+
+                            <!-- ROW D -->
+                            <tr>
+                                <th>D. 자율제조·스마트 제조 시스템</th>
+                                <td class="clickable-cell" onclick="selectMatrix('1. 제조업 전반', 'D. 자율제조·스마트 제조 시스템')">
+                                    <b>D1</b> (CPSMT, NC, 머신텐딩, 로봇용접 OLP)
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('2. 플랜트·원자력', 'D. 자율제조·스마트 제조 시스템')">
+                                    <b>D2</b> (일부 스마트제조 설비 적용)
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('3. 물류·공급망', 'D. 자율제조·스마트 제조 시스템')">
+                                    <b>D3</b> (AGV/AMR, 생산라인 자동화)
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('4. 섬유·원자재', 'D. 자율제조·스마트 제조 시스템')">
+                                    <b>D4</b>
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('5. 항공·드론·국방', 'D. 자율제조·스마트 제조 시스템')">
+                                    <b>D5</b>
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('6. 산업공통', 'D. 자율제조·스마트 제조 시스템')">
+                                    <b>D6</b> (MES-PLM 인터페이스 등)
+                                </td>
+                            </tr>
+
+                            <!-- ROW E -->
+                            <tr>
+                                <th>E. 통신·인터페이스·상호운용성</th>
+                                <td class="clickable-cell" onclick="selectMatrix('1. 제조업 전반', 'E. 통신·인터페이스·상호운용성')">
+                                    <b>E1</b> (PLC, NC System, CPSMT)
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('2. 플랜트·원자력', 'E. 통신·인터페이스·상호운용성')">
+                                    <b>E2</b> (플랜트 장비 상호운용)
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('3. 물류·공급망', 'E. 통신·인터페이스·상호운용성')">
+                                    <b>E3</b> (AGV·AMR 양방향 통신, PLC 기반 관제)
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('4. 섬유·원자재', 'E. 통신·인터페이스·상호운용성')">
+                                    <b>E4</b>
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('5. 항공·드론·국방', 'E. 통신·인터페이스·상호운용성')">
+                                    <b>E5</b> (항공·국방 DT 실시간 전송 문제)
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('6. 산업공통', 'E. 통신·인터페이스·상호운용성')">
+                                    <b>E6</b> (상호운용 프레임워크)
+                                </td>
+                            </tr>
+
+                            <!-- ROW F -->
+                            <tr>
+                                <th>F. 데이터 품질·AI·이상탐지</th>
+                                <td class="clickable-cell" onclick="selectMatrix('1. 제조업 전반', 'F. 데이터 품질·AI·이상탐지')">
+                                    <b>F1</b> (제조 AI 이상탐지, 학습데이터 품질)
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('2. 플랜트·원자력', 'F. 데이터 품질·AI·이상탐지')">
+                                    <b>F2</b> (방사선 예측, 원자력 품질)
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('3. 물류·공급망', 'F. 데이터 품질·AI·이상탐지')">
+                                    <b>F3</b> (물류라인 생산량 예측)
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('4. 섬유·원자재', 'F. 데이터 품질·AI·이상탐지')">
+                                    <b>F4</b>
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('5. 항공·드론·국방', 'F. 데이터 품질·AI·이상탐지')">
+                                    <b>F5</b>
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('6. 산업공통', 'F. 데이터 품질·AI·이상탐지')">
+                                    <b>F6</b> (AI 데이터 품질, CDD)
+                                </td>
+                            </tr>
+
+                            <!-- ROW G -->
+                            <tr>
+                                <th>G. 데이터 거래·자산관리·플랫폼</th>
+                                <td class="clickable-cell" onclick="selectMatrix('1. 제조업 전반', 'G. 데이터 거래·자산관리·플랫폼')">
+                                    <b>G1</b> (제조데이터 거래, 자산관리)
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('2. 플랜트·원자력', 'G. 데이터 거래·자산관리·플랫폼')">
+                                    <b>G2</b> (원자력 분야 DPP 활용)
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('3. 물류·공급망', 'G. 데이터 거래·자산관리·플랫폼')">
+                                    <b>G3</b> (원자재 가격, 공급망 데이터)
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('4. 섬유·원자재', 'G. 데이터 거래·자산관리·플랫폼')">
+                                    <b>G4</b> (원자재 가격/품질 기준)
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('5. 항공·드론·국방', 'G. 데이터 거래·자산관리·플랫폼')">
+                                    <b>G5</b>
+                                </td>
+                                <td class="clickable-cell" onclick="selectMatrix('6. 산업공통', 'G. 데이터 거래·자산관리·플랫폼')">
+                                    <b>G6</b> (데이터 경제 인프라)
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js?v=2"></script>
+</body>
+
+</html>
